@@ -2,7 +2,7 @@ const axios = require('axios')
 const WebSocket = require('ws');
 
 
-axios.post('http://localhost:3000/getAddress', {
+axios.post('http://localhost:3456/getAddress', {
     "username": "liyuan@comp.nus.edu.sg", 
     "id": 1, 
     "chain": "BEP20 (BSC)"
@@ -11,7 +11,7 @@ axios.post('http://localhost:3000/getAddress', {
 })
 
 
-// axios.post('http://localhost:3000/withdraw', {
+// axios.post('http://localhost:3456/withdraw', {
 //     "username": "liyuan@comp.nus.edu.sg", 
 //     "id": 1, 
 //     'coin': 'USDT',
@@ -23,6 +23,6 @@ axios.post('http://localhost:3000/getAddress', {
 // })
 
 
-// axios.get('http://localhost:3000/updateInvestPlan?username=liyuan@comp.nus.edu.sg&id=1').then(res => {
+// axios.get('http://localhost:3456/updateInvestPlan?username=liyuan@comp.nus.edu.sg&id=1').then(res => {
 //     console.log(res.data);
 // })

@@ -540,6 +540,12 @@ async function main() {
     // console.log(account);
     // return;
 
+    const web3 = new Web3('https://data-seed-prebsc-1-s1.binance.org:8545');
+    var result = await web3.eth.accounts.privateKeyToAccount('0x81a28d9a31d990f6f06a1dc15d78382c4f683a9ba681194b36d6937d4e10b3c2');
+    console.log(result);
+    var result = await web3.eth.getBlockNumber();
+    console.log(result);
+
     // const privateKeyA = '0x81a28d9a31d990f6f06a1dc15d78382c4f683a9ba681194b36d6937d4e10b3c2';
     // const privateKeyB = '0xac8718e22955dcd01ec5bc4f28bbbe4e2fa6385eca9fbcf8bbb087ff70576461';
     // const privateKeyE = '0x2b5b9035c1cbf6d637e240ebc2823d50fa2604bc25e9fd8e22e37c558db6a962';
@@ -587,7 +593,7 @@ async function main() {
     // var result = await swapTokenToToken(accountE, 'bep20_btc', 'bep20_usdt', 0.000777165731928728e18);
     // console.log(result);
 
-    await rebalance('liyuan@comp.nus.edu.sg', 1);
+    // await rebalance('liyuan@comp.nus.edu.sg', 1);
 }
 
 const myweb3 = {
@@ -601,4 +607,4 @@ const myweb3 = {
 module.exports = myweb3;
 
 
-// main()
+main()

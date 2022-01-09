@@ -2,7 +2,7 @@ const express = require('express')
 const myweb3 = require('./backend_web3')
 
 const app = express()
-const port = 3000
+const port = 3456
 
 app.use(
     express.urlencoded({

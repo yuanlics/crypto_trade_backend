@@ -270,7 +270,7 @@ async function main() {
     // console.log(result);
 
     // await updateProperties();
-    // await getUserAddrs();
+    // await getSchemeAddrs();
     // await updateChargeOrWithdrawLog();
     // await getUserAddr("liyuan@comp.nus.edu.sg", 1, "BEP20 (BSC)");
     // await getPlan('liyuan@comp.nus.edu.sg', 1);
